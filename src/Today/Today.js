@@ -56,6 +56,11 @@ class Today extends Component {
       this.setState({ltcprice: localStorage.getItem('LTC')})
     }
 
+    this.pusher = new Pusher('24520a421994caf28db3', {
+      cluster: 'ap1',
+      encrypted: true
+    })
+
     setInterval(() => {
       axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD')
         .then(response => {
