@@ -22,7 +22,7 @@ class App extends Component {
         </div>
         <section className="results--section">
           <div className="container">
-            <h1>Realtime price information about<br></br> BTC, ETH and LTC</h1>
+            <h1>Price information about<br></br> BTC, ETH and LTC</h1>
           </div>
           <div className="results--section__inner">
             <Today/>
